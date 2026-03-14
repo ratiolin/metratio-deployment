@@ -410,7 +410,7 @@ docker compose start gateway-nginx
 | SSL证书过期 | `openssl x509 -in /srv/stack/nginx/ssl/fullchain.pem -noout -dates` | 按12.3续期 |
 | 数据库连接失败 | `docker exec mm-postgres pg_isready -U postgres` | `docker compose restart mm-postgres` |
 
-## 十四、、附录
+## 十四、附录
 
 ### 14.1 端口列表
 | 端口 | 服务 | 访问控制 |
@@ -418,13 +418,13 @@ docker compose start gateway-nginx
 | 22 | SSH | 公网 |
 | 80 | HTTP→HTTPS | 公网 |
 | 443 | HTTPS | 公网 |
-| 3000 | Grafana | 建议内网 |
-| 9090 | Prometheus | 建议内网 |
-| 3100 | Loki | 建议内网 |
-| 8081 | cAdvisor | 建议内网 |
-| 9100 | node-exporter | 建议内网 |
-| 9115 | blackbox-exporter | 建议内网 |
-| 9093 | Alertmanager | 建议内网 |
+| 3000 | Grafana | 内网 |
+| 9090 | Prometheus | 内网 |
+| 3100 | Loki | 内网 |
+| 8081 | cAdvisor | 内网 |
+| 9100 | node-exporter | 内网 |
+| 9115 | blackbox-exporter | 内网 |
+| 9093 | Alertmanager | 内网 |
 
 ### 14.2 环境变量列表（脱敏）
 | 容器 | 变量名 | 用途 |
